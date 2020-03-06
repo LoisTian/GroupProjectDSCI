@@ -3,12 +3,7 @@
 
 2.Describe at least one way that you will visualize the classification results (this is in addition to the visualization created previously for exploratory data analysis)
 
-Firstly We will use the createDataPartition function from the caret package to divide our data into training/testing set.In our case, we will use 75% of the data for training, and 25% for testing. We tried 3 different classification methods,
-Case1:We uses 6 variables for predictors:P1 rank,P1 seasons,P1 titles,P2 rank,P2 seasons,P2 titles.
-Case2:We uses 4 variables for predictors:P1 rank,P1 seasons,P2 rank,P2 seasons.
-Case3:We uses 4 variables for predictors:P1 rank,P1 titles,P2 rank,P2 titles.
-Then we apply 10-fold cross-validation to our training data and deciding the number of K for each case. We tested Test the following k's: 1, 3, 5, 7, 9, 11. Based on the plot "k vs Accuracy" below, we should choose k=/// for case1, k=/// for case2, k=///for case3. We create a bar chart to visualize the comparsion of accuracy among these 3 classification.
-We conclude that case/// is the best.
+Firstly We will use the createDataPartition() function from the caret package to divide our data into training/testing set.In our case, we will use 75% of the data for training, and 25% for testing. Then We try out 3 different classification methods and calculate their accuracy. For Method1,We use 6 variables for predictors:P1 rank,P1 seasons,P1 titles,P2 rank,P2 seasons,P2 titles. For Method 2,We use 4 variables for predictors:P1 rank,P1 seasons,P2 rank,P2 seasons. For Method 3,We use 4 variables for predictors:P1 rank,P1 titles,P2 rank,P2 titles. Then we apply 10-fold cross-validation to our training data and deciding the number of K for each case. We will test the following k's: 1, 3, 5, 7, 9, 11. In order to find the k that brings the highest accuracy, we would create a line plot "k versus Accuracy" for each case. Then we can calculate the accuracy for each method with their best k’s. We create a bar chart to visualize the comparison of accuracy among these 3 different classifications. From the chart we would be able to conclude the best classification method.(around 200 words)
 
 
 
